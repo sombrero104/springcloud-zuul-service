@@ -30,7 +30,8 @@ public class ZuulLoggingFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return "pre";
+        return "pre"; // 사전 필터
+        // return "post"; // 사후 필터
     }
 
     @Override
