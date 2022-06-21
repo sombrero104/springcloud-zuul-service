@@ -1,4 +1,4 @@
-package me;
+package me.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -16,7 +16,7 @@ public class ZuulLoggingFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class ZuulLoggingFilter extends ZuulFilter {
 
     @Override
     public int filterOrder() {
-        return 0;
+        return 1;
     }
 
 }
